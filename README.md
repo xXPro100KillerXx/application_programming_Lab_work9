@@ -8,6 +8,6 @@
 ## Среда разрботки
 Язык программирования: Python  
 Среда разработки: PyCharm
-![image](https://user-images.githubusercontent.com/113775345/206927914-5f880600-c878-45a4-b161-37b04b6e6dfc.png)
-![image](https://user-images.githubusercontent.com/113775345/206927941-86174dd0-63ff-44bd-937f-faf479b4f81d.png)
-![image](https://user-images.githubusercontent.com/113775345/206928002-0a2876d9-13c7-496c-bd58-ac2e174b447b.png)
+![image](https://user-images.githubusercontent.com/113775345/206928632-f9ba1b3b-f48f-4a86-be39-864d18d4391d.png)
+![image](https://user-images.githubusercontent.com/113775345/206928665-d1d29792-ae2c-4945-a955-b6e75f8af58c.png)
+![image](https://user-images.githubusercontent.com/113775345/206928690-b86d7c6e-056f-426a-b102-dca215ac0229.png)
