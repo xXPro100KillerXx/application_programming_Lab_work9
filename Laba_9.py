@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.INFO, filename="py_log.log", format="%(asctime
 while True:
     try:
         n = int(input('Введите число '))
-        k = int(input('Введите число попыток k)'))
+        k = int(input('Введите число попыток k'))
         logging.info(f'Введено число {n}')
         logging.info(f'Введено число {k}')
         break
