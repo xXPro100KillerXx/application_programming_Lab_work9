@@ -1,29 +1,30 @@
 import random
-import logging
+from loguru import logger
 
-logging.basicConfig(level=logging.INFO, filename="py_log.log", format="%(asctime)s %(levelname)s %(message)s")
+logger.remove(handler_id=None)
+logger.add('laba_9.log', format='{time} {level} {message}', level='INFO', rotation='10 KB', compression='zip')
 
 while True:
     try:
         n = int(input('Введите число '))
-        k = int(input('Введите число попыток k'))
-        logging.info(f'Введено число {n}')
-        logging.info(f'Введено число {k}')
+        k = int(input('Введите число попыток '))
+        logger.info(f'Введено число {n}')
+        logger.info(f'Введено число {k}')
         break
     except ValueError:
         print("Вводите число ")
-        logging.error("ValueError", exc_info=True)
+        logger.error("ValueError", exc_info=True)
 
 p = list(range(1, n + 1))
 t = random.choice(p)
-logging.info(f'Компьютер загадал число  {t}')
+logger.info(f'Компьютер загадал число  {t}')
 
 v = 1
 while True:
     while True:
         try:
             x = int(input('как вы думаете, какое число загадал компьютер :'))
-            logging.info(f'попытка {v} Введено {x}')
+            logger.info(f'попытка {v} Введено {x}')
             break
         except ValueError:
             print(" Вводите число ")
@@ -34,10 +35,10 @@ while True:
             print('ваше число больше t')
         elif x == t:
             print('Вы угадали')
-            logging.info(f'Число {t} угадано')
+            logger.info(f'Число {t} угадано')
             break
     else:
         print(' Неверно \nПопытки закончились')
-        logging.info(f'попытки закончились')
+        logger.info(f'попытки закончились')
         break
     v += 1
